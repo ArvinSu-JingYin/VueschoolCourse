@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="shopping-listapp">
+      <h1>{{header || 'Welcome'}}</h1>
+      <!-- v-model Modifiers -->
+      <div>
+        <label for="">v-model.lazy: after blur v-model will get value </label>
+        <div></div>
+        <input v-model.lazy="newItem" type="text" placeholder="Add an item" />
+        {{newItem}}
+      </div>
+      <br />
+      <div>
+        <label for="">v-model.number: only number can input</label>
+        <!-- Can't prevent number enter; If you wish that, it's need to change type to number  -->
+        <div>
+          <input
+            v-model.number="newItem1"
+            type="text"
+            placeholder="Add an item"
+          />
+          {{newItem1}}
+        </div>
+      </div>
+      <br />
+      <div>
+        <label for="">v-model.trim: trim all white space</label>
+        <div>
+          <input
+            v-model.trim="newItem2"
+            type="text"
+            placeholder="Add an item"
+          />
+          {{newItem2}}
+        </div>
+      </div>
+      <br />
+      <!-- /v-model Modifiers -->
+
+      <!-- v-model radio -->
+      <label for=""> v-model sample: radio</label>
+      <div>
+        <label for="">
+          <input type="radio" v-model="newItemPriority" value="low" />
+          Low
+        </label>
+        <label for="">
+          <input type="radio" v-model="newItemPriority" value="hight" />
+          Hight
+        </label>
+        <br />
+        {{newItemPriority}}
+      </div>
+      <br />
+      <!-- /v-model radio -->
+
+      <!-- v-model select -->
+      <label>V-model Select: </label>
+      <div>
+        <select v-model="newItemPriority1" name="" id="">
+          <option value="low">Low</option>
+          <option value="high">High</option>
+        </select>
+        {{newItemPriority1}}
+      </div>
+      <br />
+      <!-- /v-model select -->
+      <!-- v-model checkbox-->
+      <label>
+        V-model CheckBox:
+        <div>
+          HighPriority
+          <input v-model="newItemHighPriority" type="checkbox" name="" id="" />
+          {{newItemHighPriority}}
+        </div>
+      </label>
+      <br />
+      <!-- /v-model checkbox-->
+
+      <!-- v-model checkbox multiples-->
+      <label for="">
+        <input type="checkbox" value="vanilla" v-model="iceCreamFlavors" />
+        Vanilla
+      </label>
+      <label for="">
+        <input type="checkbox" value="chocolate" v-model="iceCreamFlavors" />
+        Chocolate
+      </label>
+      <label for="">
+        <input type="checkbox" value="strawberry" v-model="iceCreamFlavors" />
+        Strawberry
+      </label>
+      <label for="">
+        <input type="checkbox" value="Cookies and Cream" v-model="iceCreamFlavors" />
+        Cookies and Cream
+      </label>
+
+      <!-- /v-model checkbox multiples-->
+    </div>
+  </body>
+  <script src="https://unpkg.com/vue@3"></script>
+  <script>
+    const shoppingList = Vue.createApp({
+      data() {
+        return {
+          header: "Shopping List App",
+          newItem: "",
+          newItem1: "",
+          newItem2: "",
+          newItemPriority: "",
+          newItemPriority1: "",
+          newItemHighPriority: false,
+          iceCreamFlavors: [],
+        };
+      },
+    }).mount("#shopping-listapp");
+  </script>
+</html>

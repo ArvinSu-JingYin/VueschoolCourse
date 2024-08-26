@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>
+    <div id="shopping-list">
+      <h1>{{header || 'Welcome'}}</h1>
+      <!-- if you input some info in the box and clicked the enter kay, the message will add to the list -->
+      <input
+        @keyup.enter="items.push({id:items.length + 1, label: newItem})"
+        type="text"
+        v-model="newItem"
+        placeholder="Add an Item"
+      />
+      <label for="">
+        <input type="checkbox" v-model="newItemHighPriority" />
+        Hight Priority
+      </label>
+      <button
+        v-on:click="items.push({id:items.length+1, label:newItem})"
+        class="btn btn-primary"
+      >
+        Save Item
+      </button>
+      <ul>
+        <li v-for="item in items" :key="item.id">{{item.label}}</li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    const app = Vue.createApp({
+      data() {
+        return {
+          header: "Shopping List App",
+          newItem: "",
+          newItemHighPriority: "",
+          items: [
+            { id: 1, label: "10 party hats" },
+            { id: 2, label: "2 board games" },
+            { id: 3, label: "20 cups" },
+          ],
+        };
+      },
+    }).mount("#shopping-list");
+  </script>
+</html>

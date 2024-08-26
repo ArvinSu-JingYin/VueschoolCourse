@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="shopping-list">
+      <h1>{{ header || 'Welcome'}}</h1>
+      <ul>
+        <h3>【HTML】</h3>
+        <li>10 party hats</li>
+        <li>2 board games</li>
+        <li>20 cups</li>
+      </ul>
+      <br />
+      <ul>
+        <h3>【v-for="item in items"】</h3>
+        <li v-for="item in items">{{item}}</li>
+      </ul>
+      <ul>
+        <h3>【v-for="item in items1" :key="item.id"】</h3>
+        <li v-for="item in items1" :key="item.id">{{item.label}}</li>
+      </ul>
+      <ul>
+        <h3>【v-for="{id, label} in items1" :key="id"】</h3>
+        <li v-for="{id, label} in items1" :key="id">{{label}}</li>
+      </ul>
+      <ul>
+        <h3>【v-for="(item, index) in items1" :key="item.id"】</h3>
+        <li v-for="(item, index) in items1" :key="item.id">{{index}} : {{item.label}}</li>
+      </ul>
+      <ul>
+        <h3>【v-for="(item, key) in items2" :key="item.id"】</h3>
+        <li v-for="(item, key) in items2" :key="item.id">{{key}} : {{item.label}}</li>
+      </ul>
+    </div>
+  </body>
+  <script src="https://unpkg.com/vue@3"></script>
+  <script>
+    const shoppingList = Vue.createApp({
+      data() {
+        return {
+          header: "Shopping List App",
+          items: ["10 party hats", "2 board games", "20 cups"],
+          items1: [
+            { id: 1, label:"10 party hats"}, 
+            { id: 2, label:"2 board games"}, 
+            { id: 3, label:"20 cups"}
+            ],
+            items2: {
+            'item-1': { id: 1, label:"10 party hats"}, 
+            'item-2': { id: 2, label:"2 board games"}, 
+            'item-3': { id: 3, label:"20 cups"}
+            },
+        };
+      },
+    }).mount("#shopping-list");
+  </script>
+</html>

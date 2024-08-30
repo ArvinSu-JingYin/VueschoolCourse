@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js Components Fundamentals</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- <link
+      rel="stylesheet"
+      href="Vue Component Slots.css"
+    /> -->
+</head>
+<body>
+    <div id="app">
+        <h1>Vue.js Slots Fundamentals</h1>
+        <todo-item>Buy bananas</todo-item>
+        <todo-item>Eat bananas</todo-item>
+        <todo-item>Celebrate!</todo-item>
+
+        <hr>
+        <todo-item>
+            <p>Celebrate!</p>
+            <button>Good Morning</button>
+        </todo-item>
+
+        <hr>
+        <!-- 這是一個未具名插槽的範例 -->
+        <todo-item>
+            Celebrate!1
+            <p>Good Morning Celebrate!</p>
+        </todo-item>
+
+        <hr>
+        <!-- 使用具名插槽 'description' 來插入描述內容 -->
+        <todo-item>
+            Celebrate!2
+            <template v-slot:description>
+                <p>Good Morning Celebrate!</p>
+            </template>
+        </todo-item>
+
+        <hr>
+        <!-- 使用未具名插槽和具名插槽 'description' 來插入描述內容 -->
+        <todo-item>
+            Celebrate!3
+            <p>Good Morning Celebrate!</p>
+            <template v-slot:description>
+                <p>Good Morning Celebrate!</p>
+            </template>
+        </todo-item>
+
+        <hr>
+        <!-- 使用具名插槽 'button-text' 來插入按鈕文字 -->
+        <todo-item>
+            Celebrate!4
+            <template v-slot:description>
+                <p>Good Morning Celebrate!</p>
+            </template>
+            <template v-slot:button-text>
+                Make it nice too
+            </template>
+        </todo-item>
+    </div>
+
+    <script type="text/x-template" id="todo-item-template">
+        <div class="input-item">
+            <input type="checkbox" v-model="done"/>
+            <span :class="{ done: done }">
+                <slot></slot>
+            </span>
+            <slot name="description"></slot>
+            <button>Make it nice</button>
+            <button><slot name="button-text">default button text</slot></button>
+        </div>
+    </script>
+
+    <style>
+        .done {
+            color: green;
+            text-decoration: line-through;
+        }
+    </style>
+    
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="Vue Component Slots.js"></script>
+</body>
+</html>

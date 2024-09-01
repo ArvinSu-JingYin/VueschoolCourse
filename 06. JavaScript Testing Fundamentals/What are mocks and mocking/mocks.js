@@ -18,4 +18,6 @@ const test = function(){
     return JSON.stringify(args[0]) === JSON.stringify([user, 'admin'])
 }
 
+console.log(isUserAdmin())
+console.log(args[0])
 console.log('isUserAdmin is called with correct arguments: ', test())

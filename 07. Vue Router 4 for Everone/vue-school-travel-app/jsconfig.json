@@ -1,0 +1,16 @@
+{
+    // Include all files in the 'src' directory and its subdirectories
+    "include": [
+        "src/**/*"
+    ],
+    "compilerOptions": {
+        // Set the base URL for module resolution
+        "baseUrl": ".",
+        // Define path alias for '@' to map to the 'src' directory
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        }
+    }
+}

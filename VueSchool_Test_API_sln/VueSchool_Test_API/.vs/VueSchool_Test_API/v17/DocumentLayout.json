@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4D39ACE8-7EEC-47CB-A049-FA1383F1DE6B}|VueSchool_Test_API_sln\\VueSchool_Test_API_sln.csproj|c:\\arvin\\github\\vueschoolcourse\\vueschool_test_api_sln\\vueschool_test_api\\vueschool_test_api_sln\\controllers\\temp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D39ACE8-7EEC-47CB-A049-FA1383F1DE6B}|VueSchool_Test_API_sln\\VueSchool_Test_API_sln.csproj|solutionrelative:vueschool_test_api_sln\\controllers\\temp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Temp.cs",
+              "DocumentMoniker": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_API_sln\\Controllers\\Temp.cs",
+              "RelativeDocumentMoniker": "VueSchool_Test_API_sln\\Controllers\\Temp.cs",
+              "ToolTip": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_API_sln\\Controllers\\Temp.cs",
+              "RelativeToolTip": "VueSchool_Test_API_sln\\Controllers\\Temp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T15:05:30.135Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

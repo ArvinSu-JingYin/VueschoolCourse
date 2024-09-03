@@ -1,0 +1,6 @@
+@VueSchool_Test_API_sln_HostAddress = http://localhost:5053
+
+GET {{VueSchool_Test_API_sln_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

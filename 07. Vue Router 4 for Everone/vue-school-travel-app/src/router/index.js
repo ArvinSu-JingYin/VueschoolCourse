@@ -29,7 +29,13 @@ const routes = [
   { path: '/hawaii', name: 'Hawaii', component: () => import('@/views/Hawaii.vue') },
   { path: '/jamaica', name: 'Jamaica', component: () => import('@/views/Jamaica.vue') },
   { path: '/panama', name: 'Panama', component: () => import('@/views/Panama.vue') },
+
+  //type 3 : dynamic import
+  {path: '/destination/:id', name: 'Destination.Show', component: () => import('@/views/DestinationShow.vue')}
 ]
+
+//type 4 : dynamic import with named routes
+
 
 const router = createRouter({
   history: createWebHistory(),

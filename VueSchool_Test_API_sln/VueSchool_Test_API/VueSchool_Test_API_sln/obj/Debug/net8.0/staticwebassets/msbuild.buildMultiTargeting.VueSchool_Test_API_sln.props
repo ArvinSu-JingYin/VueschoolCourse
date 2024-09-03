@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\VueSchool_Test_API_sln.props" />
+</Project>

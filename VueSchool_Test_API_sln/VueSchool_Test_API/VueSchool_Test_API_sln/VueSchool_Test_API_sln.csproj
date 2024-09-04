@@ -7,7 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="APIModel\DTO\TravelData_DTOModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonHelper\CommonHelper.csproj" />
+    <ProjectReference Include="..\VueSchool_Test_DataAccessLayer\VueSchool_Test_DataAccessLayer.csproj" />
+    <ProjectReference Include="..\VueSchool_Test_ServiceLayer\VueSchool_Test_BusinessLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="APIModel\DTO\" />
   </ItemGroup>
 
 </Project>

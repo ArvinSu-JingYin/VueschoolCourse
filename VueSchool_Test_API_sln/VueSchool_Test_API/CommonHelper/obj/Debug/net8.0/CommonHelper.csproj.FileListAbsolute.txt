@@ -1,0 +1,13 @@
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\CommonHelper\bin\Debug\net8.0\CommonHelper.deps.json
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\CommonHelper\bin\Debug\net8.0\CommonHelper.dll
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\CommonHelper\bin\Debug\net8.0\CommonHelper.pdb
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\CommonHelper\obj\Debug\net8.0\CommonHelper.csproj.AssemblyReference.cache
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\CommonHelper\obj\Debug\net8.0\CommonHelper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\CommonHelper\obj\Debug\net8.0\CommonHelper.AssemblyInfoInputs.cache
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\CommonHelper\obj\Debug\net8.0\CommonHelper.AssemblyInfo.cs
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\CommonHelper\obj\Debug\net8.0\CommonHelper.csproj.CoreCompileInputs.cache
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\CommonHelper\obj\Debug\net8.0\CommonHelper.sourcelink.json
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\CommonHelper\obj\Debug\net8.0\CommonHelper.dll
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\CommonHelper\obj\Debug\net8.0\refint\CommonHelper.dll
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\CommonHelper\obj\Debug\net8.0\CommonHelper.pdb
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\CommonHelper\obj\Debug\net8.0\ref\CommonHelper.dll

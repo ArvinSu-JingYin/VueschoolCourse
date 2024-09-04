@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VueSchool_Test_API_sln")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b1388608281e7ed6390776747d8b48c48b69039")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1c49ea2cf373beebc70987f1049df3acfed4f27")]
 [assembly: System.Reflection.AssemblyProductAttribute("VueSchool_Test_API_sln")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VueSchool_Test_API_sln")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

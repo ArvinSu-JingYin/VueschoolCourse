@@ -1,0 +1,16 @@
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_ServiceLayer\bin\Debug\net8.0\VueSchool_Test_BusinessLayer.deps.json
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_ServiceLayer\bin\Debug\net8.0\VueSchool_Test_BusinessLayer.dll
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_ServiceLayer\bin\Debug\net8.0\VueSchool_Test_BusinessLayer.pdb
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_ServiceLayer\bin\Debug\net8.0\VueSchool_Test_DataAccessLayer.dll
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_ServiceLayer\bin\Debug\net8.0\VueSchool_Test_DataAccessLayer.pdb
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_ServiceLayer\obj\Debug\net8.0\VueSchool_Test_BusinessLayer.csproj.AssemblyReference.cache
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_ServiceLayer\obj\Debug\net8.0\VueSchool_Test_BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_ServiceLayer\obj\Debug\net8.0\VueSchool_Test_BusinessLayer.AssemblyInfoInputs.cache
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_ServiceLayer\obj\Debug\net8.0\VueSchool_Test_BusinessLayer.AssemblyInfo.cs
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_ServiceLayer\obj\Debug\net8.0\VueSchool_Test_BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_ServiceLayer\obj\Debug\net8.0\VueSchool_Test_BusinessLayer.sourcelink.json
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_ServiceLayer\obj\Debug\net8.0\VueSchoo.CE29DCF6.Up2Date
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_ServiceLayer\obj\Debug\net8.0\VueSchool_Test_BusinessLayer.dll
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_ServiceLayer\obj\Debug\net8.0\refint\VueSchool_Test_BusinessLayer.dll
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_ServiceLayer\obj\Debug\net8.0\VueSchool_Test_BusinessLayer.pdb
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_ServiceLayer\obj\Debug\net8.0\ref\VueSchool_Test_BusinessLayer.dll

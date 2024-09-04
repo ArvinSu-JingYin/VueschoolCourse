@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VueSchool_Test_API_sln")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edb7ac2f276a638d6f3c15404e275d466f111578")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b1388608281e7ed6390776747d8b48c48b69039")]
 [assembly: System.Reflection.AssemblyProductAttribute("VueSchool_Test_API_sln")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VueSchool_Test_API_sln")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

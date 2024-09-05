@@ -9,6 +9,10 @@
       "VueSchool_Test_API_sln/1.0.0": {
         "dependencies": {
           "CommonHelper": "1.0.0",
+          "Microsoft.Extensions.Logging": "8.0.0",
+          "NLog": "5.3.3",
+          "NLog.Extensions.Logging": "5.3.12",
+          "NLog.Web.AspNetCore": "5.3.12",
           "Swashbuckle.AspNetCore": "6.4.0",
           "VueSchool_Test_BusinessLayer": "1.0.0",
           "VueSchool_Test_DataAccessLayer": "1.0.0"
@@ -89,6 +93,17 @@
           "lib/net8.0/NLog.Extensions.Logging.dll": {
             "assemblyVersion": "5.0.0.0",
             "fileVersion": "5.3.12.562"
+          }
+        }
+      },
+      "NLog.Web.AspNetCore/5.3.12": {
+        "dependencies": {
+          "NLog.Extensions.Logging": "5.3.12"
+        },
+        "runtime": {
+          "lib/net8.0/NLog.Web.AspNetCore.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.3.12.1137"
           }
         }
       },
@@ -199,17 +214,13 @@
       },
       "System.Security.Principal.Windows/4.7.0": {},
       "CommonHelper/1.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Logging": "8.0.0",
-          "NLog": "5.3.3",
-          "NLog.Extensions.Logging": "5.3.12"
-        },
         "runtime": {
           "CommonHelper.dll": {}
         }
       },
       "VueSchool_Test_BusinessLayer/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.Logging": "8.0.0",
           "VueSchool_Test_DataAccessLayer": "1.0.0"
         },
         "runtime": {
@@ -218,6 +229,7 @@
       },
       "VueSchool_Test_DataAccessLayer/1.0.0": {
         "dependencies": {
+          "CommonHelper": "1.0.0",
           "Dapper": "2.1.35",
           "System.Data.SqlClient": "4.8.6"
         },
@@ -330,6 +342,13 @@
       "sha512": "sha512-L6bOT5O5/pDZFAz4Oief/xtEi8zsVoGfjHqgtvA5ZI/cSBwpNwAKRBQsMYNadmmgj3OdJuQRfkasn6+qppVmuQ==",
       "path": "nlog.extensions.logging/5.3.12",
       "hashPath": "nlog.extensions.logging.5.3.12.nupkg.sha512"
+    },
+    "NLog.Web.AspNetCore/5.3.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w6dqfm/31xpbZeCxtJa1aiKo/JVWp7jruTQaW6hQJCmiNNRHBZMnYQWYZrU9PThWyPtAlr/n/k7nHdH4/XzPYg==",
+      "path": "nlog.web.aspnetcore/5.3.12",
+      "hashPath": "nlog.web.aspnetcore.5.3.12.nupkg.sha512"
     },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "type": "package",

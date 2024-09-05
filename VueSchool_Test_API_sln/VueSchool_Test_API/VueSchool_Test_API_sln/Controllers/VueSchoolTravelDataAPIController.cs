@@ -16,10 +16,18 @@ namespace VueSchool_Test_API_sln.Controllers
             _iVusSchool_Data_Service = iVusSchool_Data_Service;
         }
 
-        [HttpGet(Name = "GetTravelData")]
-        public IEnumerable<Destination_DTOModel> GetTravelData()
+        /// <summary>
+        /// Get a list of destinations from the VusSchool_TravelData table
+        /// </summary>
+        /// <returns>Returns a collection of Destination_DTOModel</returns>
+        /// <remarks>
+        /// This method retrieves data from the VusSchool_TravelData table using the service layer
+        /// and maps it to a collection of Destination_DTOModel.
+        /// </remarks>
+        [HttpPost(Name = "GetTravelData")]
+        public IEnumerable<Destination_DTOModel> GetTravelData(string num)
         {
-            var getTravelData =  _iVusSchool_Data_Service.GetTravelData();
+            var getTravelData =  _iVusSchool_Data_Service.GetTravelData(num);
 
             return getTravelData;
         }

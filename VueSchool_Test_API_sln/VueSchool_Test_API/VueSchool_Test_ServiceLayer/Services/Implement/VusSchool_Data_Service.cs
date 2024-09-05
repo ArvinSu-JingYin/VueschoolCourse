@@ -9,6 +9,8 @@ using VueSchool_Test_BusinessLayer.Services.Interface;
 using VueSchool_Test_DataAccessLayer.DataModel.DTO;
 using VueSchool_Test_DataAccessLayer.Providers.Interface;
 using static VueSchool_Test_BusinessLayer.ServiceModel.DTO.Destination_DTOModel;
+using Microsoft.Extensions.Logging;
+
 
 namespace VueSchool_Test_BusinessLayer.Services.Implement
 {
@@ -16,31 +18,43 @@ namespace VueSchool_Test_BusinessLayer.Services.Implement
     {
         private readonly IVusSchool_Rootobject_Provider _rootobject_Provider;
         private readonly IVusSchool_Experience_Provider _experience_Provider;
+        private readonly ILogger<VusSchool_Data_Service> _logger;
 
-        public VusSchool_Data_Service(IVusSchool_Rootobject_Provider rootobject_Providerprovider, IVusSchool_Experience_Provider experience_Provider)
+
+        public VusSchool_Data_Service(
+            IVusSchool_Rootobject_Provider rootobject_Providerprovider
+            , IVusSchool_Experience_Provider experience_Provider
+            , ILogger<VusSchool_Data_Service> logger
+        )
         {
             _rootobject_Provider = rootobject_Providerprovider;
             _experience_Provider = experience_Provider;
+            _logger = logger;
+            _logger.LogInformation("VusSchool_Data_Service 初始化完成");
         }
 
-        public IEnumerable<Destination_DTOModel> GetTravelData()
+        /// <summary>
+        /// Get travel data
+        /// </summary>
+        /// <param name="num">The number of travel data</param>
+        /// <returns>Returns a collection of travel data containing destinations and related experiences</returns>
+        /// <remarks>
+        /// This method retrieves data from the root object provider and experience provider
+        /// , and combines them into a collection containing destinations and related experiences.
+        /// </remarks>
+        public IEnumerable<Destination_DTOModel> GetTravelData(string num)
         {
             var destinationDict = new Dictionary<int, Destination_DTOModel>();
             var destinationList = new List<Destination_DTOModel>();
 
-            dynamic result = null;
-
             try
             {
-                // 獲取根物件資料
-                var rootObjectList = _rootobject_Provider.GetVusSchoolRootobjectList();
+                var rootObjectList = _rootobject_Provider.GetVusSchoolRootobjectList(num);
 
-                // 獲取經驗資料
-                var experienceList = _experience_Provider.GetVusSchoolExperienceList();
+                var experienceList = _experience_Provider.GetVusSchoolExperienceList(num);
 
                 foreach (var rootObject in rootObjectList)
                 {
-                    // 如果這個目的地已經存在於字典中，則不再新增，直接使用現有的項目
                     if (!destinationDict.ContainsKey(rootObject.Id))
                     {
                         destinationDict[rootObject.Id] = new Destination_DTOModel
@@ -56,7 +70,6 @@ namespace VueSchool_Test_BusinessLayer.Services.Implement
 
                     var destination = destinationDict[rootObject.Id];
 
-                    // 將該目的地的相關經驗加入
                     var relatedExperiences = experienceList.Where(x => x.Id == rootObject.Id).ToList();
                     foreach (var experience in relatedExperiences)
                     {
@@ -70,15 +83,16 @@ namespace VueSchool_Test_BusinessLayer.Services.Implement
                         });
                     }
                 }
+
+                _logger.LogInformation("GetTravelData 成功");
             }
             catch (Exception ex)
             {
-                result = ex.ToString();
+                _logger.LogError($"[ Exception ] GetTravelData : {ex}");
+                _logger.LogInformation("GetTravelData 失敗");
             }
 
-            result = destinationDict.Values;
-
-            return result;
+            return destinationDict.Values;
         }
     }
 }

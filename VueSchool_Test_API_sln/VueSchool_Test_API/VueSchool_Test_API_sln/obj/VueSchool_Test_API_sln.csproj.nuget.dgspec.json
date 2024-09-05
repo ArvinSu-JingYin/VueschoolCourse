@@ -49,20 +49,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.Extensions.Logging": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "NLog": {
-              "target": "Package",
-              "version": "[5.3.3, )"
-            },
-            "NLog.Extensions.Logging": {
-              "target": "Package",
-              "version": "[5.3.12, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -139,6 +125,22 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.3.3, )"
+            },
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.3.12, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.3.12, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -195,7 +197,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\CommonHelper\\CommonHelper.csproj": {
+                "projectPath": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\CommonHelper\\CommonHelper.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -291,6 +297,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

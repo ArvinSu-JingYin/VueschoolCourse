@@ -9,6 +9,14 @@ namespace VueSchool_Test_DataAccessLayer.Providers.Interface
 {
     public interface IVusSchool_Experience_Provider
     {
-        public IEnumerable<VusSchool_Experience_DTOModel> GetVusSchoolExperienceList();
+        /// <summary>
+        /// Get a list of experiences from the VusSchool_Experience table
+        /// </summary>
+        /// <returns>Returns a collection of VusSchool_Experience_DTOModel</returns>
+        /// <remarks>
+        /// This method retrieves data from the VusSchool_Experience table using Dapper
+        /// and maps it to a collection of VusSchool_Experience_DTOModel.
+        /// </remarks>
+        public IEnumerable<VusSchool_Experience_DTOModel> GetVusSchoolExperienceList(string num);
     }
 }

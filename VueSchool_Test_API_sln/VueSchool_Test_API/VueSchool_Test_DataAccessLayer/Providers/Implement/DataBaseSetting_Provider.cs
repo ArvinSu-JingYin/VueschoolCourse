@@ -10,6 +10,10 @@ namespace VueSchool_Test_DataAccessLayer.Providers.Implement
     {
         public string ConnectionString { get; set; }
 
+        /// <summary>
+        /// Initializes a new instance of the DataBaseSetting_Provider class.
+        /// </summary>
+        /// <param name="connectionString">The connection string to the database.</param>
         public DataBaseSetting_Provider(string connectionString)
         {
             ConnectionString = connectionString;

@@ -7,14 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="MyHelper\" />
-    <Folder Include="IMyHelper\" />
+    <Compile Remove="Log\**" />
+    <Compile Remove="MyHelper\NLog\**" />
+    <EmbeddedResource Remove="Log\**" />
+    <EmbeddedResource Remove="MyHelper\NLog\**" />
+    <None Remove="Log\**" />
+    <None Remove="MyHelper\NLog\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
-    <PackageReference Include="NLog" Version="5.3.3" />
-    <PackageReference Include="NLog.Extensions.Logging" Version="5.3.12" />
+    <Compile Remove="IMyHelper\ILoggerManager.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="IMyHelper\" />
+    <Folder Include="MyHelper\" />
   </ItemGroup>
 
 </Project>

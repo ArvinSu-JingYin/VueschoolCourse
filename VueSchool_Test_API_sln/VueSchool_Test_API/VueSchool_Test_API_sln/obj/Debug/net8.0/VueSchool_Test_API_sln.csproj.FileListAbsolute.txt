@@ -1,6 +1,14 @@
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\obj\Debug\net8.0\VueSchool_Test_API_sln.csproj.AssemblyReference.cache
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\obj\Debug\net8.0\VueSchool_Test_API_sln.GeneratedMSBuildEditorConfig.editorconfig
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\obj\Debug\net8.0\VueSchool_Test_API_sln.AssemblyInfoInputs.cache
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\obj\Debug\net8.0\VueSchool_Test_API_sln.AssemblyInfo.cs
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\obj\Debug\net8.0\VueSchool_Test_API_sln.csproj.CoreCompileInputs.cache
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\obj\Debug\net8.0\VueSchool_Test_API_sln.MvcApplicationPartsAssemblyInfo.cache
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\obj\Debug\net8.0\VueSchool_Test_API_sln.sourcelink.json
 C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\bin\Debug\net8.0\appsettings.Development.json
 C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\bin\Debug\net8.0\appsettings.json
 C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\bin\Debug\net8.0\VueSchool_Test_API_sln.exe
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\bin\Debug\net8.0\nlog.config
 C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\bin\Debug\net8.0\VueSchool_Test_API_sln.deps.json
 C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\bin\Debug\net8.0\VueSchool_Test_API_sln.runtimeconfig.json
 C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\bin\Debug\net8.0\VueSchool_Test_API_sln.dll
@@ -9,6 +17,7 @@ C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSch
 C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\bin\Debug\net8.0\NLog.dll
 C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\bin\Debug\net8.0\NLog.Extensions.Logging.dll
+C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\bin\Debug\net8.0\NLog.Web.AspNetCore.dll
 C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -24,14 +33,7 @@ C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSch
 C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\bin\Debug\net8.0\CommonHelper.pdb
 C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\bin\Debug\net8.0\VueSchool_Test_DataAccessLayer.pdb
 C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\bin\Debug\net8.0\VueSchool_Test_BusinessLayer.pdb
-C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\obj\Debug\net8.0\VueSchool_Test_API_sln.csproj.AssemblyReference.cache
-C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\obj\Debug\net8.0\VueSchool_Test_API_sln.GeneratedMSBuildEditorConfig.editorconfig
-C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\obj\Debug\net8.0\VueSchool_Test_API_sln.AssemblyInfoInputs.cache
-C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\obj\Debug\net8.0\VueSchool_Test_API_sln.AssemblyInfo.cs
-C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\obj\Debug\net8.0\VueSchool_Test_API_sln.csproj.CoreCompileInputs.cache
 C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\obj\Debug\net8.0\VueSchool_Test_API_sln.MvcApplicationPartsAssemblyInfo.cs
-C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\obj\Debug\net8.0\VueSchool_Test_API_sln.MvcApplicationPartsAssemblyInfo.cache
-C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\obj\Debug\net8.0\VueSchool_Test_API_sln.sourcelink.json
 C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\obj\Debug\net8.0\staticwebassets.build.json
 C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\obj\Debug\net8.0\staticwebassets.development.json
 C:\Arvin\GitHub\VueschoolCourse\VueSchool_Test_API_sln\VueSchool_Test_API\VueSchool_Test_API_sln\obj\Debug\net8.0\staticwebassets\msbuild.VueSchool_Test_API_sln.Microsoft.AspNetCore.StaticWebAssets.props

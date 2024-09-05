@@ -19,7 +19,15 @@ namespace VueSchool_Test_DataAccessLayer.Providers.Implement
             _connectString = connectString.ConnectionString;
         }
 
-        public IEnumerable<VusSchool_Experience_DTOModel> GetVusSchoolExperienceList()
+        /// <summary>
+        /// Get a list of experiences from the VusSchool_Experience table
+        /// </summary>
+        /// <returns>Returns a collection of VusSchool_Experience_DTOModel</returns>
+        /// <remarks>
+        /// This method retrieves data from the VusSchool_Experience table using Dapper
+        /// and maps it to a collection of VusSchool_Experience_DTOModel.
+        /// </remarks>
+        public IEnumerable<VusSchool_Experience_DTOModel> GetVusSchoolExperienceList(string num)
         {
             StringBuilder sql = new StringBuilder();
 
@@ -30,10 +38,12 @@ namespace VueSchool_Test_DataAccessLayer.Providers.Implement
             sql.Append("    ,image" + Environment.NewLine);
             sql.Append("    ,description" + Environment.NewLine);
             sql.Append("FROM VusSchool_Experience" + Environment.NewLine);
+            sql.Append("WHERE 1 = 1" + Environment.NewLine);
+            sql.Append("    AND Id = @Id" + Environment.NewLine);
 
             using (var conn = new SqlConnection(_connectString))
             {
-                return conn.Query<VusSchool_Experience_DTOModel>(sql.ToString());
+                return conn.Query<VusSchool_Experience_DTOModel>(sql.ToString(), new { Id = num });
             }
         }
     }

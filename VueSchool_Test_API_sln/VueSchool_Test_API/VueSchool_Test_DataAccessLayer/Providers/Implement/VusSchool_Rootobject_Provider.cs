@@ -19,7 +19,15 @@ namespace VueSchool_Test_DataAccessLayer.Providers.Implement
             _connectString = connectString.ConnectionString;
         }
 
-        public IEnumerable<VusSchool_Rootobject_DTOModel> GetVusSchoolRootobjectList()
+        /// <summary>
+        /// Get a list of root objects from the VusSchool_Rootobject table
+        /// </summary>
+        /// <returns>Returns a collection of VusSchool_Rootobject_DTOModel</returns>
+        /// <remarks>
+        /// This method retrieves data from the VusSchool_Rootobject table using Dapper
+        /// and maps it to a collection of VusSchool_Rootobject_DTOModel.
+        /// </remarks>
+        public IEnumerable<VusSchool_Rootobject_DTOModel> GetVusSchoolRootobjectList(string num)
         {
             using (var conn = new SqlConnection(_connectString))
             {
@@ -33,8 +41,10 @@ namespace VueSchool_Test_DataAccessLayer.Providers.Implement
                 sql.Append("    ,image" + Environment.NewLine);
                 sql.Append("    ,description" + Environment.NewLine);
                 sql.Append("FROM VusSchool_Rootobject" + Environment.NewLine);
+                sql.Append("WHERE 1 = 1" + Environment.NewLine);
+                sql.Append("    AND Id = @Id" + Environment.NewLine);
 
-                return conn.Query<VusSchool_Rootobject_DTOModel>(sql.ToString());
+                return conn.Query<VusSchool_Rootobject_DTOModel>(sql.ToString(), new { Id = num });
             }
         }
     }

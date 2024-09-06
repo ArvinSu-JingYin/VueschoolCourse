@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("VueSchool_Test_DataAccessLayer")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("VueSchool_Test_NUnit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6993d45446b786f150577fd588ea2a37019a6974")]
-[assembly: System.Reflection.AssemblyProductAttribute("VueSchool_Test_DataAccessLayer")]
-[assembly: System.Reflection.AssemblyTitleAttribute("VueSchool_Test_DataAccessLayer")]
+[assembly: System.Reflection.AssemblyProductAttribute("VueSchool_Test_NUnit")]
+[assembly: System.Reflection.AssemblyTitleAttribute("VueSchool_Test_NUnit")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // 由 MSBuild WriteCodeFragment 類別產生。

@@ -5,11 +5,13 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VueSchool_Test_API_sln", "VueSchool_Test_API_sln\VueSchool_Test_API_sln.csproj", "{4D39ACE8-7EEC-47CB-A049-FA1383F1DE6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VueSchool_Test_DataAccessLayer", "VueSchool_Test_DataAccessLayer\VueSchool_Test_DataAccessLayer.csproj", "{32148029-9A83-4BC5-9828-32BB40918AF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VueSchool_Test_DataAccessLayer", "VueSchool_Test_DataAccessLayer\VueSchool_Test_DataAccessLayer.csproj", "{32148029-9A83-4BC5-9828-32BB40918AF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VueSchool_Test_BusinessLayer", "VueSchool_Test_ServiceLayer\VueSchool_Test_BusinessLayer.csproj", "{D0735AC4-24C6-4DA3-837B-E78CFEA27094}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VueSchool_Test_BusinessLayer", "VueSchool_Test_ServiceLayer\VueSchool_Test_BusinessLayer.csproj", "{D0735AC4-24C6-4DA3-837B-E78CFEA27094}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonHelper", "CommonHelper\CommonHelper.csproj", "{0563729A-1E95-4A21-BF7A-053BD896F038}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonHelper", "CommonHelper\CommonHelper.csproj", "{0563729A-1E95-4A21-BF7A-053BD896F038}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VueSchool_Test_NUnit", "VueSchool_Test_NUnit\VueSchool_Test_NUnit.csproj", "{FF992D38-286A-400A-A74D-DEE7658808C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{0563729A-1E95-4A21-BF7A-053BD896F038}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0563729A-1E95-4A21-BF7A-053BD896F038}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0563729A-1E95-4A21-BF7A-053BD896F038}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF992D38-286A-400A-A74D-DEE7658808C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF992D38-286A-400A-A74D-DEE7658808C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF992D38-286A-400A-A74D-DEE7658808C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF992D38-286A-400A-A74D-DEE7658808C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

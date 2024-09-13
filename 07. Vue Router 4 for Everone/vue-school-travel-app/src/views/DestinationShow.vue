@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import sourceData from "@/data.json";
+//import sourceData from "@/data.json";
 
 export default {
   data() {
@@ -17,9 +17,21 @@ export default {
       destination: null,
     };
   },
+  //type 5 : dynamic import with named routes
+  props: { type: Number, required: true },
+
+  //type 4 : dynamic import with named routes
+  // computed: {
+  //   destinationId() {
+  //     return parseInt(this.$route.params.id);
+  //   },
+
+  //type 5 : dynamic import with named routes
   computed: {
     destinationId() {
-      return parseInt(this.$route.params.id);
+      return sourceData.destinations.find(
+        (destination) => destination.id === this.id
+      );
     },
 
     /*  Reacting to Param Changes type 1 : fetch data from API
@@ -35,16 +47,18 @@ export default {
   //Reacting to Param Changes type 1 : fetch data from API
   async created() {
     const response = await fetch(
-      `https://travel-dummy-api.netlify.app/${this.$route.params.slug}`
+      // `https://travel-dummy-api.netlify.app/${this.$route.params.slug}`
+      `https://localhost:44343/GetTravelData?id=${this.$route.params.id}&slug=${this.$route.params.slug}`
     );
-    this.destination = await response.json();
+    this.destination = (await response.json())[0];
     this.$watch(
       () => this.$route.params,
       async () => {
         const response = await fetch(
-          `https://travel-dummy-api.netlify.app/${this.$route.params.slug}`
+          // `https://travel-dummy-api.netlify.app/${this.$route.params.slug}`
+          `https://localhost:44343/GetTravelData?id=${this.$route.params.id}&slug=${this.$route.params.slug}`
         );
-        this.destination = await response.json();
+        this.destination = (await response.json())[0];
       }
     );
   },

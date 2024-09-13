@@ -35,9 +35,22 @@ const routes = [
 // ]
 
 //type 4 : dynamic import with named routes
+// const routes = [
+//   { path: '/', name: 'Home', component: Home },
+//   { path: '/destination/:id/:slug', name: 'Destination.Show', component: () => import('@/views/DestinationShow.vue')}
+// ]
+
+//type 5 : dynamic import with named routes and props
 const routes = [
   { path: '/', name: 'Home', component: Home },
-  { path: '/destination/:id/:slug', name: 'Destination.Show', component: () => import('@/views/DestinationShow.vue')}
+  { path: '/destination/:id/:slug', 
+    name: 'Destination.Show', 
+    component: () => import('@/views/DestinationShow.vue'),
+    props: route => ({
+      id: parseInt(route.params.id),
+      slug: route.params.slug
+    })
+  }
 ]
 
 const router = createRouter({

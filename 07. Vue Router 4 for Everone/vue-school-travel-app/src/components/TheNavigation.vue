@@ -16,7 +16,10 @@
       :key="destination.id"
       :to="{
         name: 'Destination.Show',
-        params: { id: destination.id, slug: destination.slug },
+        params: {
+          id: destination.id,
+          slug: destination.name, // Using 'name' as the slug for simplicity
+        },
       }"
       >{{ destination.name }}</router-link
     >
@@ -24,13 +27,20 @@
 </template>
 
 <script>
-import sourceData from "@/data.json";
-
 export default {
   data() {
     return {
-      destinations: sourceData.destinations,
+      destinations: [],
     };
+  },
+  async created() {
+    try {
+      const response = await fetch(`https://localhost:44343/GetTravelDataNav`);
+      this.destinations = await response.json();
+      console.log(this.destinations);
+    } catch (error) {
+      console.error("Error fetching destinations:", error);
+    }
   },
 };
 </script>

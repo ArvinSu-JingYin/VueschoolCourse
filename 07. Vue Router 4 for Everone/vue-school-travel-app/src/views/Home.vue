@@ -18,11 +18,12 @@
 </template>
 
 <script>
-import sourceData from "@/data.json";
+//import sourceData from "@/data.json";
 export default {
   data() {
     return {
-      destinations: sourceData.destinations,
+      //destinations: sourceData.destinations,
+      destinations: [],
     };
   },
 };

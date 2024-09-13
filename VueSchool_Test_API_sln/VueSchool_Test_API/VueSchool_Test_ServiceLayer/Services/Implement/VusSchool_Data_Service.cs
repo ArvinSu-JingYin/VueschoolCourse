@@ -30,7 +30,7 @@ namespace VueSchool_Test_BusinessLayer.Services.Implement
         /// <summary>
         /// Get travel data
         /// </summary>
-        /// <param name="num">The number of travel data</param>
+        /// <param name="id">The number of travel data</param>
         /// <returns>Returns a collection of travel data containing destinations and related experiences</returns>
         /// <remarks>
         /// This method retrieves data from the root object provider and experience provider
@@ -45,42 +45,46 @@ namespace VueSchool_Test_BusinessLayer.Services.Implement
             {
                 var searchDto = new APISearchDataDto
                 {
-                    num = apiSearchModel.num,
+                    id = apiSearchModel.id,
                     slug = apiSearchModel.slug
                 };
 
-                var rootObjectList = _rootobject_Provider.GetVusSchoolRootobjectList(searchDto);
-
-                var experienceList = _experience_Provider.GetVusSchoolExperienceList(searchDto);
-
-                foreach (var rootObject in rootObjectList)
+                if (searchDto != null)
                 {
-                    if (!destinationDict.ContainsKey(rootObject.Id))
-                    {
-                        destinationDict[rootObject.Id] = new Destination_DTOModel
-                        {
-                            Id = rootObject.Id,
-                            name = rootObject.name,
-                            slug = rootObject.slug,
-                            image = rootObject.image,
-                            description = rootObject.description,
-                            experience = new List<Experience>()
-                        };
-                    }
+                    var rootObjectList = _rootobject_Provider.GetVusSchoolRootobjectList(searchDto);
 
-                    var destination = destinationDict[rootObject.Id];
+                    var experienceList = _experience_Provider.GetVusSchoolExperienceList(searchDto.id);
 
-                    var relatedExperiences = experienceList.Where(x => x.Id == rootObject.Id).ToList();
-                    foreach (var experience in relatedExperiences)
+                    foreach (var rootObject in rootObjectList)
                     {
-                        destination.experience.Add(new Experience
+                        if (!destinationDict.ContainsKey(rootObject.Id))
                         {
-                            Id = experience.Id,
-                            name = experience.name,
-                            slug = experience.slug,
-                            image = experience.image,
-                            description = experience.description
-                        });
+                            destinationDict[rootObject.Id] = new Destination_DTOModel
+                            {
+                                Id = rootObject.Id,
+                                name = rootObject.name,
+                                slug = rootObject.slug,
+                                image = rootObject.image,
+                                description = rootObject.description,
+                                experience = new List<Experience>()
+                            };
+                        }
+
+                        var destination = destinationDict[rootObject.Id];
+
+                        var relatedExperiences = experienceList.Where(x => x.Id == rootObject.Id).ToList();
+
+                        foreach (var experience in relatedExperiences)
+                        {
+                            destination.experience.Add(new Experience
+                            {
+                                Id = experience.Id,
+                                name = experience.name,
+                                slug = experience.slug,
+                                image = experience.image,
+                                description = experience.description
+                            });
+                        }
                     }
                 }
 
@@ -93,6 +97,11 @@ namespace VueSchool_Test_BusinessLayer.Services.Implement
             }
 
             return destinationDict.Values;
+        }
+
+        public Dictionary<int, string?> GetTravelDataNavList()
+        {
+           return  _rootobject_Provider.VusSchoolNav();
         }
     }
 }

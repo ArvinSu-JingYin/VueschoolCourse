@@ -26,6 +26,16 @@ namespace VueSchool_Test_API_sln
                 builder.Logging.ClearProviders();
                 builder.Host.UseNLog();
 
+                //CORS
+                var allowCors = "allowCors";
+                builder.Services.AddCors(opt =>
+                {
+                    opt.AddPolicy(allowCors, policy =>
+                    {
+                        policy.WithOrigins("*").WithHeaders("*").WithMethods("*");
+                    });
+                });
+
                 // ConnectionString Provider
                 var connectionString = builder.Configuration.GetConnectionString("VueSchool");
 
@@ -48,6 +58,9 @@ namespace VueSchool_Test_API_sln
                     app.UseSwagger();
                     app.UseSwaggerUI();
                 }
+
+                // CORS
+                app.UseCors("allowCors");
 
                 app.UseHttpsRedirection();
 

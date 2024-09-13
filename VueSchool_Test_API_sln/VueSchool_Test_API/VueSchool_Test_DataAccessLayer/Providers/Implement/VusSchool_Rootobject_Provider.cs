@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 using VueSchool_Test_DataAccessLayer.DataModel.DTO;
 using System.Data.SqlClient;
 using Dapper;
 using VueSchool_Test_DataAccessLayer.Providers.Interface;
 using VueSchool_Test_DataAccessLayer.DataModel;
+using System.Text.RegularExpressions;
+using System.Xml.Linq;
 
 namespace VueSchool_Test_DataAccessLayer.Providers.Implement
 {
@@ -47,7 +45,25 @@ namespace VueSchool_Test_DataAccessLayer.Providers.Implement
                 sql.Append("    AND slug = @slug" + Environment.NewLine);
 
                 return conn.Query<VusSchool_Rootobject_DTOModel>(sql.ToString(),
-                                                                 new { Id = dto.num, slug = dto.slug });
+                                                                 new { Id = dto.id, slug = dto.slug });
+            }
+        }
+
+        public Dictionary<int, string?> VusSchoolNav()
+        {
+            using (var conn = new SqlConnection(_connectString)) {
+            
+                StringBuilder sql = new StringBuilder();
+
+                sql.Append("SELECT" + Environment.NewLine);
+                sql.Append("    Id," + Environment.NewLine);
+                sql.Append("    name" + Environment.NewLine);
+                sql.Append("FROM VusSchool_Rootobject" + Environment.NewLine);
+                sql.Append("GROUP BY" + Environment.NewLine);
+                sql.Append("    Id," + Environment.NewLine);
+                sql.Append("    name" + Environment.NewLine);
+
+                return conn.Query<VusSchool_Rootobject_DTOModel>(sql.ToString()).ToDictionary(k => k.Id, v => v.name);
             }
         }
     }

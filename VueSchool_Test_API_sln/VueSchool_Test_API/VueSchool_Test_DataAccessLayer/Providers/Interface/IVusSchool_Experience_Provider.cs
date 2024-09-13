@@ -18,6 +18,6 @@ namespace VueSchool_Test_DataAccessLayer.Providers.Interface
         /// This method retrieves data from the VusSchool_Experience table using Dapper
         /// and maps it to a collection of VusSchool_Experience_DTOModel.
         /// </remarks>
-        public IEnumerable<VusSchool_Experience_DTOModel> GetVusSchoolExperienceList(APISearchDataDto apiSearchDataDto);
+        public IEnumerable<VusSchool_Experience_DTOModel> GetVusSchoolExperienceList(string id);
     }
 }

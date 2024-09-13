@@ -1,4 +1,5 @@
 ﻿using Moq;
+using VueSchool_Test_BusinessLayer.ServiceModel;
 using VueSchool_Test_BusinessLayer.ServiceModel.DTO;
 using VueSchool_Test_BusinessLayer.Services.Interface;
 
@@ -25,19 +26,24 @@ namespace VueSchool_Test_BusinessLayer.Services.Implement.Tests
         {
             // Arrange: Prepare the test data
             // Input parameters
-            var num = "1"; 
+            var searchModel = new APISearchDataModel
+            {
+                id = "1",
+                slug = "Brazil"
+            };
 
             // Expected result
             var expectedData = new List<Destination_DTOModel>
             {
-                new Destination_DTOModel { Id = 1, name = "Destination 1", }
+                new Destination_DTOModel { Id = 1, slug = "Brazil", name = "Destination 1", }
             }; 
 
             // Set the behavior of the Mock object, when the GetTravelData method is called, return the expected result
-            _mockService.Setup(service => service.GetTravelData(num)).Returns(expectedData);
+            _mockService.Setup(service => service.GetTravelData(It.Is<APISearchDataModel>(
+                model => model.id == "1" && model.slug == "Brazil"))).Returns(expectedData);
 
             // Act: Execute the test method
-            var result = _mockService.Object.GetTravelData(num);
+            var result = _mockService.Object.GetTravelData(searchModel);
 
             // Assert: Validate the result
             // Validate if the result is the same as expected   

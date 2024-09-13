@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using VueSchool_Test_API_sln.APIModel;
+using VueSchool_Test_BusinessLayer.ServiceModel;
 using VueSchool_Test_BusinessLayer.ServiceModel.DTO;
 using VueSchool_Test_BusinessLayer.Services.Implement;
 using VueSchool_Test_BusinessLayer.Services.Interface;
@@ -25,9 +27,9 @@ namespace VueSchool_Test_API_sln.Controllers
         /// and maps it to a collection of Destination_DTOModel.
         /// </remarks>
         [HttpPost(Name = "GetTravelData")]
-        public IEnumerable<Destination_DTOModel> GetTravelData(string num)
+        public IEnumerable<Destination_DTOModel> GetTravelData(APISearchDataModel apiSearchModel)
         {
-            var getTravelData =  _iVusSchool_Data_Service.GetTravelData(num);
+            var getTravelData =  _iVusSchool_Data_Service.GetTravelData(apiSearchModel);
 
             return getTravelData;
         }

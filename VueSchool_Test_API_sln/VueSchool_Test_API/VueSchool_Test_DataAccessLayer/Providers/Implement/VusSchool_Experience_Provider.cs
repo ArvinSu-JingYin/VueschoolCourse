@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VueSchool_Test_DataAccessLayer.DataModel;
 using VueSchool_Test_DataAccessLayer.DataModel.DTO;
 using VueSchool_Test_DataAccessLayer.Providers.Interface;
 
@@ -27,7 +28,7 @@ namespace VueSchool_Test_DataAccessLayer.Providers.Implement
         /// This method retrieves data from the VusSchool_Experience table using Dapper
         /// and maps it to a collection of VusSchool_Experience_DTOModel.
         /// </remarks>
-        public IEnumerable<VusSchool_Experience_DTOModel> GetVusSchoolExperienceList(string num)
+        public IEnumerable<VusSchool_Experience_DTOModel> GetVusSchoolExperienceList(APISearchDataDto dto)
         {
             StringBuilder sql = new StringBuilder();
 
@@ -40,10 +41,12 @@ namespace VueSchool_Test_DataAccessLayer.Providers.Implement
             sql.Append("FROM VusSchool_Experience" + Environment.NewLine);
             sql.Append("WHERE 1 = 1" + Environment.NewLine);
             sql.Append("    AND Id = @Id" + Environment.NewLine);
+            sql.Append("    AND slug = @slug" + Environment.NewLine);
 
             using (var conn = new SqlConnection(_connectString))
             {
-                return conn.Query<VusSchool_Experience_DTOModel>(sql.ToString(), new { Id = num });
+                return conn.Query<VusSchool_Experience_DTOModel>(sql.ToString(),
+                                                                 new { Id = dto.num, slug = dto.slug });
             }
         }
     }

@@ -7,6 +7,7 @@ using VueSchool_Test_DataAccessLayer.DataModel.DTO;
 using System.Data.SqlClient;
 using Dapper;
 using VueSchool_Test_DataAccessLayer.Providers.Interface;
+using VueSchool_Test_DataAccessLayer.DataModel;
 
 namespace VueSchool_Test_DataAccessLayer.Providers.Implement
 {
@@ -27,7 +28,7 @@ namespace VueSchool_Test_DataAccessLayer.Providers.Implement
         /// This method retrieves data from the VusSchool_Rootobject table using Dapper
         /// and maps it to a collection of VusSchool_Rootobject_DTOModel.
         /// </remarks>
-        public IEnumerable<VusSchool_Rootobject_DTOModel> GetVusSchoolRootobjectList(string num)
+        public IEnumerable<VusSchool_Rootobject_DTOModel> GetVusSchoolRootobjectList(APISearchDataDto dto)
         {
             using (var conn = new SqlConnection(_connectString))
             {
@@ -43,8 +44,10 @@ namespace VueSchool_Test_DataAccessLayer.Providers.Implement
                 sql.Append("FROM VusSchool_Rootobject" + Environment.NewLine);
                 sql.Append("WHERE 1 = 1" + Environment.NewLine);
                 sql.Append("    AND Id = @Id" + Environment.NewLine);
+                sql.Append("    AND slug = @slug" + Environment.NewLine);
 
-                return conn.Query<VusSchool_Rootobject_DTOModel>(sql.ToString(), new { Id = num });
+                return conn.Query<VusSchool_Rootobject_DTOModel>(sql.ToString(),
+                                                                 new { Id = dto.num, slug = dto.slug });
             }
         }
     }

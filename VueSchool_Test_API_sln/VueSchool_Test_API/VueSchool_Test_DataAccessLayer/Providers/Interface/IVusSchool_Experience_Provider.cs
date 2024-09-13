@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VueSchool_Test_DataAccessLayer.DataModel;
 using VueSchool_Test_DataAccessLayer.DataModel.DTO;
 
 namespace VueSchool_Test_DataAccessLayer.Providers.Interface
@@ -17,6 +18,6 @@ namespace VueSchool_Test_DataAccessLayer.Providers.Interface
         /// This method retrieves data from the VusSchool_Experience table using Dapper
         /// and maps it to a collection of VusSchool_Experience_DTOModel.
         /// </remarks>
-        public IEnumerable<VusSchool_Experience_DTOModel> GetVusSchoolExperienceList(string num);
+        public IEnumerable<VusSchool_Experience_DTOModel> GetVusSchoolExperienceList(APISearchDataDto apiSearchDataDto);
     }
 }

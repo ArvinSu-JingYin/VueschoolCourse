@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VueSchool_Test_BusinessLayer.ServiceModel.DTO;
+﻿using VueSchool_Test_BusinessLayer.ServiceModel.DTO;
 using VueSchool_Test_BusinessLayer.Services.Interface;
-using VueSchool_Test_DataAccessLayer.DataModel.DTO;
 using VueSchool_Test_DataAccessLayer.Providers.Interface;
 using static VueSchool_Test_BusinessLayer.ServiceModel.DTO.Destination_DTOModel;
 using Microsoft.Extensions.Logging;
-
+using VueSchool_Test_BusinessLayer.ServiceModel;
+using VueSchool_Test_DataAccessLayer.DataModel;
 
 namespace VueSchool_Test_BusinessLayer.Services.Implement
 {
@@ -42,16 +36,22 @@ namespace VueSchool_Test_BusinessLayer.Services.Implement
         /// This method retrieves data from the root object provider and experience provider
         /// , and combines them into a collection containing destinations and related experiences.
         /// </remarks>
-        public IEnumerable<Destination_DTOModel> GetTravelData(string num)
+        public IEnumerable<Destination_DTOModel> GetTravelData(APISearchDataModel apiSearchModel)
         {
             var destinationDict = new Dictionary<int, Destination_DTOModel>();
             var destinationList = new List<Destination_DTOModel>();
 
             try
             {
-                var rootObjectList = _rootobject_Provider.GetVusSchoolRootobjectList(num);
+                var searchDto = new APISearchDataDto
+                {
+                    num = apiSearchModel.num,
+                    slug = apiSearchModel.slug
+                };
 
-                var experienceList = _experience_Provider.GetVusSchoolExperienceList(num);
+                var rootObjectList = _rootobject_Provider.GetVusSchoolRootobjectList(searchDto);
+
+                var experienceList = _experience_Provider.GetVusSchoolExperienceList(searchDto);
 
                 foreach (var rootObject in rootObjectList)
                 {

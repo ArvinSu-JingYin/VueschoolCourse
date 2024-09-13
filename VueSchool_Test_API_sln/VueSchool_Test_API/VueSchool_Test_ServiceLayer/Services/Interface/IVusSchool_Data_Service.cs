@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VueSchool_Test_BusinessLayer.ServiceModel;
 using VueSchool_Test_BusinessLayer.ServiceModel.DTO;
 
 namespace VueSchool_Test_BusinessLayer.Services.Interface
@@ -18,6 +19,6 @@ namespace VueSchool_Test_BusinessLayer.Services.Interface
         /// This method retrieves data from the root object provider and experience provider
         /// , and combines them into a collection containing destinations and related experiences.
         /// </remarks>
-        public IEnumerable<Destination_DTOModel> GetTravelData(string num);
+        public IEnumerable<Destination_DTOModel> GetTravelData(APISearchDataModel apiSearchModel);
     }
 }

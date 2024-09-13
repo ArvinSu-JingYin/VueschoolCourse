@@ -1,7 +1,44 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{32148029-9A83-4BC5-9828-32BB40918AF2}|VueSchool_Test_DataAccessLayer\\VueSchool_Test_DataAccessLayer.csproj|c:\\arvin\\github\\vueschoolcourse\\vueschool_test_api_sln\\vueschool_test_api\\vueschool_test_dataaccesslayer\\providers\\implement\\vusschool_experience_provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32148029-9A83-4BC5-9828-32BB40918AF2}|VueSchool_Test_DataAccessLayer\\VueSchool_Test_DataAccessLayer.csproj|solutionrelative:vueschool_test_dataaccesslayer\\providers\\implement\\vusschool_experience_provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32148029-9A83-4BC5-9828-32BB40918AF2}|VueSchool_Test_DataAccessLayer\\VueSchool_Test_DataAccessLayer.csproj|c:\\arvin\\github\\vueschoolcourse\\vueschool_test_api_sln\\vueschool_test_api\\vueschool_test_dataaccesslayer\\providers\\implement\\vusschool_rootobject_provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32148029-9A83-4BC5-9828-32BB40918AF2}|VueSchool_Test_DataAccessLayer\\VueSchool_Test_DataAccessLayer.csproj|solutionrelative:vueschool_test_dataaccesslayer\\providers\\implement\\vusschool_rootobject_provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32148029-9A83-4BC5-9828-32BB40918AF2}|VueSchool_Test_DataAccessLayer\\VueSchool_Test_DataAccessLayer.csproj|c:\\arvin\\github\\vueschoolcourse\\vueschool_test_api_sln\\vueschool_test_api\\vueschool_test_dataaccesslayer\\providers\\interface\\ivusschool_experience_provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32148029-9A83-4BC5-9828-32BB40918AF2}|VueSchool_Test_DataAccessLayer\\VueSchool_Test_DataAccessLayer.csproj|solutionrelative:vueschool_test_dataaccesslayer\\providers\\interface\\ivusschool_experience_provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32148029-9A83-4BC5-9828-32BB40918AF2}|VueSchool_Test_DataAccessLayer\\VueSchool_Test_DataAccessLayer.csproj|c:\\arvin\\github\\vueschoolcourse\\vueschool_test_api_sln\\vueschool_test_api\\vueschool_test_dataaccesslayer\\providers\\interface\\ivusschool_rootobject_provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32148029-9A83-4BC5-9828-32BB40918AF2}|VueSchool_Test_DataAccessLayer\\VueSchool_Test_DataAccessLayer.csproj|solutionrelative:vueschool_test_dataaccesslayer\\providers\\interface\\ivusschool_rootobject_provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0735AC4-24C6-4DA3-837B-E78CFEA27094}|VueSchool_Test_ServiceLayer\\VueSchool_Test_BusinessLayer.csproj|c:\\arvin\\github\\vueschoolcourse\\vueschool_test_api_sln\\vueschool_test_api\\vueschool_test_servicelayer\\services\\implement\\vusschool_data_service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0735AC4-24C6-4DA3-837B-E78CFEA27094}|VueSchool_Test_ServiceLayer\\VueSchool_Test_BusinessLayer.csproj|solutionrelative:vueschool_test_servicelayer\\services\\implement\\vusschool_data_service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32148029-9A83-4BC5-9828-32BB40918AF2}|VueSchool_Test_DataAccessLayer\\VueSchool_Test_DataAccessLayer.csproj|c:\\arvin\\github\\vueschoolcourse\\vueschool_test_api_sln\\vueschool_test_api\\vueschool_test_dataaccesslayer\\datamodel\\apisearchdatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32148029-9A83-4BC5-9828-32BB40918AF2}|VueSchool_Test_DataAccessLayer\\VueSchool_Test_DataAccessLayer.csproj|solutionrelative:vueschool_test_dataaccesslayer\\datamodel\\apisearchdatadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0735AC4-24C6-4DA3-837B-E78CFEA27094}|VueSchool_Test_ServiceLayer\\VueSchool_Test_BusinessLayer.csproj|c:\\arvin\\github\\vueschoolcourse\\vueschool_test_api_sln\\vueschool_test_api\\vueschool_test_servicelayer\\servicemodel\\apisearchdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0735AC4-24C6-4DA3-837B-E78CFEA27094}|VueSchool_Test_ServiceLayer\\VueSchool_Test_BusinessLayer.csproj|solutionrelative:vueschool_test_servicelayer\\servicemodel\\apisearchdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0735AC4-24C6-4DA3-837B-E78CFEA27094}|VueSchool_Test_ServiceLayer\\VueSchool_Test_BusinessLayer.csproj|c:\\arvin\\github\\vueschoolcourse\\vueschool_test_api_sln\\vueschool_test_api\\vueschool_test_servicelayer\\services\\interface\\ivusschool_data_service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0735AC4-24C6-4DA3-837B-E78CFEA27094}|VueSchool_Test_ServiceLayer\\VueSchool_Test_BusinessLayer.csproj|solutionrelative:vueschool_test_servicelayer\\services\\interface\\ivusschool_data_service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D39ACE8-7EEC-47CB-A049-FA1383F1DE6B}|VueSchool_Test_API_sln\\VueSchool_Test_API_sln.csproj|c:\\arvin\\github\\vueschoolcourse\\vueschool_test_api_sln\\vueschool_test_api\\vueschool_test_api_sln\\controllers\\vueschooltraveldataapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D39ACE8-7EEC-47CB-A049-FA1383F1DE6B}|VueSchool_Test_API_sln\\VueSchool_Test_API_sln.csproj|solutionrelative:vueschool_test_api_sln\\controllers\\vueschooltraveldataapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,137 +46,132 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-<<<<<<< HEAD
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-=======
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VusSchool_Data_ServiceTests.cs",
-              "DocumentMoniker": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_NUnit\\Services\\Implement\\VusSchool_Data_ServiceTests.cs",
-              "RelativeDocumentMoniker": "VueSchool_Test_NUnit\\Services\\Implement\\VusSchool_Data_ServiceTests.cs",
-              "ToolTip": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_NUnit\\Services\\Implement\\VusSchool_Data_ServiceTests.cs",
-              "RelativeToolTip": "VueSchool_Test_NUnit\\Services\\Implement\\VusSchool_Data_ServiceTests.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T14:13:40.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VusSchool_Data_Service.cs",
-              "DocumentMoniker": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_ServiceLayer\\Services\\Implement\\VusSchool_Data_Service.cs",
-              "RelativeDocumentMoniker": "VueSchool_Test_ServiceLayer\\Services\\Implement\\VusSchool_Data_Service.cs",
-              "ToolTip": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_ServiceLayer\\Services\\Implement\\VusSchool_Data_Service.cs",
-              "RelativeToolTip": "VueSchool_Test_ServiceLayer\\Services\\Implement\\VusSchool_Data_Service.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAA6wDUAAABYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T12:47:59.604Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "VusSchool_Rootobject_Provider.cs",
-              "DocumentMoniker": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_DataAccessLayer\\Providers\\Implement\\VusSchool_Rootobject_Provider.cs",
-              "RelativeDocumentMoniker": "VueSchool_Test_DataAccessLayer\\Providers\\Implement\\VusSchool_Rootobject_Provider.cs",
-              "ToolTip": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_DataAccessLayer\\Providers\\Implement\\VusSchool_Rootobject_Provider.cs",
-              "RelativeToolTip": "VueSchool_Test_DataAccessLayer\\Providers\\Implement\\VusSchool_Rootobject_Provider.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T15:27:53.977Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "nlog.config",
-              "DocumentMoniker": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_API_sln\\nlog.config",
-              "RelativeDocumentMoniker": "VueSchool_Test_API_sln\\nlog.config",
-              "ToolTip": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_API_sln\\nlog.config",
-              "RelativeToolTip": "VueSchool_Test_API_sln\\nlog.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-09-05T13:10:34.446Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "VusSchool_Experience_Provider.cs",
               "DocumentMoniker": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_DataAccessLayer\\Providers\\Implement\\VusSchool_Experience_Provider.cs",
               "RelativeDocumentMoniker": "VueSchool_Test_DataAccessLayer\\Providers\\Implement\\VusSchool_Experience_Provider.cs",
               "ToolTip": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_DataAccessLayer\\Providers\\Implement\\VusSchool_Experience_Provider.cs",
               "RelativeToolTip": "VueSchool_Test_DataAccessLayer\\Providers\\Implement\\VusSchool_Experience_Provider.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAADwvx4AAAAJAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAzwCcAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T15:19:56.966Z"
+              "WhenOpened": "2024-09-13T08:19:07.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VusSchool_Rootobject_Provider.cs",
+              "DocumentMoniker": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_DataAccessLayer\\Providers\\Implement\\VusSchool_Rootobject_Provider.cs",
+              "RelativeDocumentMoniker": "VueSchool_Test_DataAccessLayer\\Providers\\Implement\\VusSchool_Rootobject_Provider.cs",
+              "ToolTip": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_DataAccessLayer\\Providers\\Implement\\VusSchool_Rootobject_Provider.cs",
+              "RelativeToolTip": "VueSchool_Test_DataAccessLayer\\Providers\\Implement\\VusSchool_Rootobject_Provider.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T08:18:58.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IVusSchool_Experience_Provider.cs",
+              "DocumentMoniker": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_DataAccessLayer\\Providers\\Interface\\IVusSchool_Experience_Provider.cs",
+              "RelativeDocumentMoniker": "VueSchool_Test_DataAccessLayer\\Providers\\Interface\\IVusSchool_Experience_Provider.cs",
+              "ToolTip": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_DataAccessLayer\\Providers\\Interface\\IVusSchool_Experience_Provider.cs",
+              "RelativeToolTip": "VueSchool_Test_DataAccessLayer\\Providers\\Interface\\IVusSchool_Experience_Provider.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAB2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T08:18:29.77Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "VueSchool_Test_BusinessLayer.csproj",
-              "DocumentMoniker": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_ServiceLayer\\VueSchool_Test_BusinessLayer.csproj",
-              "RelativeDocumentMoniker": "VueSchool_Test_ServiceLayer\\VueSchool_Test_BusinessLayer.csproj",
-              "ToolTip": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_ServiceLayer\\VueSchool_Test_BusinessLayer.csproj",
-              "RelativeToolTip": "VueSchool_Test_ServiceLayer\\VueSchool_Test_BusinessLayer.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-06T13:37:50.516Z"
+              "Title": "IVusSchool_Rootobject_Provider.cs",
+              "DocumentMoniker": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_DataAccessLayer\\Providers\\Interface\\IVusSchool_Rootobject_Provider.cs",
+              "RelativeDocumentMoniker": "VueSchool_Test_DataAccessLayer\\Providers\\Interface\\IVusSchool_Rootobject_Provider.cs",
+              "ToolTip": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_DataAccessLayer\\Providers\\Interface\\IVusSchool_Rootobject_Provider.cs",
+              "RelativeToolTip": "VueSchool_Test_DataAccessLayer\\Providers\\Interface\\IVusSchool_Rootobject_Provider.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAMwBQAAAB2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T08:16:47.61Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_NUnit\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "VueSchool_Test_NUnit\\UnitTest1.cs",
-              "ToolTip": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_NUnit\\UnitTest1.cs",
-              "RelativeToolTip": "VueSchool_Test_NUnit\\UnitTest1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "VusSchool_Data_Service.cs",
+              "DocumentMoniker": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_ServiceLayer\\Services\\Implement\\VusSchool_Data_Service.cs",
+              "RelativeDocumentMoniker": "VueSchool_Test_ServiceLayer\\Services\\Implement\\VusSchool_Data_Service.cs",
+              "ToolTip": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_ServiceLayer\\Services\\Implement\\VusSchool_Data_Service.cs",
+              "RelativeToolTip": "VueSchool_Test_ServiceLayer\\Services\\Implement\\VusSchool_Data_Service.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAqwC4AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T14:04:36.866Z"
+              "WhenOpened": "2024-09-13T07:51:52.489Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_API_sln\\appsettings.json",
-              "RelativeDocumentMoniker": "VueSchool_Test_API_sln\\appsettings.json",
-              "ToolTip": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_API_sln\\appsettings.json",
-              "RelativeToolTip": "VueSchool_Test_API_sln\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-05T13:49:08.352Z"
+              "DocumentIndex": 5,
+              "Title": "APISearchDataDto.cs",
+              "DocumentMoniker": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_DataAccessLayer\\DataModel\\APISearchDataDto.cs",
+              "RelativeDocumentMoniker": "VueSchool_Test_DataAccessLayer\\DataModel\\APISearchDataDto.cs",
+              "ToolTip": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_DataAccessLayer\\DataModel\\APISearchDataDto.cs",
+              "RelativeToolTip": "VueSchool_Test_DataAccessLayer\\DataModel\\APISearchDataDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T08:17:57.944Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "APISearchDataModel.cs",
+              "DocumentMoniker": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_ServiceLayer\\ServiceModel\\APISearchDataModel.cs",
+              "RelativeDocumentMoniker": "VueSchool_Test_ServiceLayer\\ServiceModel\\APISearchDataModel.cs",
+              "ToolTip": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_ServiceLayer\\ServiceModel\\APISearchDataModel.cs",
+              "RelativeToolTip": "VueSchool_Test_ServiceLayer\\ServiceModel\\APISearchDataModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T07:53:33.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IVusSchool_Data_Service.cs",
+              "DocumentMoniker": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_ServiceLayer\\Services\\Interface\\IVusSchool_Data_Service.cs",
+              "RelativeDocumentMoniker": "VueSchool_Test_ServiceLayer\\Services\\Interface\\IVusSchool_Data_Service.cs",
+              "ToolTip": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_ServiceLayer\\Services\\Interface\\IVusSchool_Data_Service.cs",
+              "RelativeToolTip": "VueSchool_Test_ServiceLayer\\Services\\Interface\\IVusSchool_Data_Service.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAMwBUAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T07:51:55.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "VueSchoolTravelDataAPIController.cs",
               "DocumentMoniker": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_API_sln\\Controllers\\VueSchoolTravelDataAPIController.cs",
               "RelativeDocumentMoniker": "VueSchool_Test_API_sln\\Controllers\\VueSchoolTravelDataAPIController.cs",
               "ToolTip": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_API_sln\\Controllers\\VueSchoolTravelDataAPIController.cs",
               "RelativeToolTip": "VueSchool_Test_API_sln\\Controllers\\VueSchoolTravelDataAPIController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAADwvxoAAAAqAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAqwB8AAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T14:58:35.965Z"
+              "WhenOpened": "2024-09-13T07:47:41.476Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_API_sln\\Program.cs",
-              "RelativeDocumentMoniker": "VueSchool_Test_API_sln\\Program.cs",
-              "ToolTip": "C:\\Arvin\\GitHub\\VueschoolCourse\\VueSchool_Test_API_sln\\VueSchool_Test_API\\VueSchool_Test_API_sln\\Program.cs",
-              "RelativeToolTip": "VueSchool_Test_API_sln\\Program.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAAwB0AAABeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T12:48:42.398Z"
->>>>>>> main
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

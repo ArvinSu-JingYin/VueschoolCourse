@@ -15,9 +15,9 @@ namespace VueSchool_Test_BusinessLayer.ServiceModel.DTO
             public string? image { get; set; }
             public string? description { get; set; }
 
-            public List<Experience>? experience { get; set; }
+            public List<Experiences>? experiences { get; set; }
 
-        public class Experience
+        public class Experiences
         {
             public int Id { get; set; }
             public string? name { get; set; }

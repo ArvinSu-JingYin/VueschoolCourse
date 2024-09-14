@@ -33,7 +33,7 @@ namespace VueSchool_Test_BusinessLayer.Services.Implement
         /// <param name="id">The number of travel data</param>
         /// <returns>Returns a collection of travel data containing destinations and related experiences</returns>
         /// <remarks>
-        /// This method retrieves data from the root object provider and experience provider
+        /// This method retrieves data from the root object provider and experiences provider
         /// , and combines them into a collection containing destinations and related experiences.
         /// </remarks>
         public IEnumerable<Destination_DTOModel> GetTravelData(APISearchDataModel apiSearchModel)
@@ -66,7 +66,7 @@ namespace VueSchool_Test_BusinessLayer.Services.Implement
                                 slug = rootObject.slug,
                                 image = rootObject.image,
                                 description = rootObject.description,
-                                experience = new List<Experience>()
+                                experiences = new List<Experiences>()
                             };
                         }
 
@@ -76,7 +76,7 @@ namespace VueSchool_Test_BusinessLayer.Services.Implement
 
                         foreach (var experience in relatedExperiences)
                         {
-                            destination.experience.Add(new Experience
+                            destination.experiences.Add(new Experiences
                             {
                                 Id = experience.Id,
                                 name = experience.name,

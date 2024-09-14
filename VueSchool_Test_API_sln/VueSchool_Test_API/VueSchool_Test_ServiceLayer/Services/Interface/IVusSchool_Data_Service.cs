@@ -16,7 +16,7 @@ namespace VueSchool_Test_BusinessLayer.Services.Interface
         /// <param name="id">The number of travel data</param>
         /// <returns>Returns a collection of travel data containing destinations and related experiences</returns>
         /// <remarks>
-        /// This method retrieves data from the root object provider and experience provider
+        /// This method retrieves data from the root object provider and experiences provider
         /// , and combines them into a collection containing destinations and related experiences.
         /// </remarks>
         public IEnumerable<Destination_DTOModel> GetTravelData(APISearchDataModel apiSearchModel);

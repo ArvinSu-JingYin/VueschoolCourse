@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VueSchool_Test_DataAccessLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f9403c917ad28da1d965648fce19d6aca2ee73c")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07d9812226c53ef26f578cdac7527a15c622d3a4")]
->>>>>>> main
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9f93cadb0419c049d56688ae19c047878f6fb7f")]
 [assembly: System.Reflection.AssemblyProductAttribute("VueSchool_Test_DataAccessLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VueSchool_Test_DataAccessLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

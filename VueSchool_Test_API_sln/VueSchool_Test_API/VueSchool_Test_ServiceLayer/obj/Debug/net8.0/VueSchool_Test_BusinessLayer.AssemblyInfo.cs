@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VueSchool_Test_BusinessLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e96610a82c0dc2170c603cc368c6773509b35ad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+089070ce7b0960e60685ab70d06e2c70476fcc4c")]
 [assembly: System.Reflection.AssemblyProductAttribute("VueSchool_Test_BusinessLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VueSchool_Test_BusinessLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

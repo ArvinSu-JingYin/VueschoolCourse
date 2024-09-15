@@ -6,8 +6,15 @@
       <p>{{ destination.description }}</p>
     </div>
   </section>
-  <section class="experiences">
+  <section class="experiences" v-if="destination !== null">
     <h2>Top Experiences in {{ destination.name }}</h2>
+    <div class="cards">
+      <ExperienceCard
+        v-for="experience in destination.experiences"
+        :key="experience.id"
+        :experience="experience"
+      />
+    </div>
     <!-- <div class="cards">
       <div v-for="experience in destination.experiences" :key="experience.id" class="card">
         <img :src="`/images/${experience.image}`" :alt="experience.name" />
@@ -20,6 +27,7 @@
 
 <script>
 //import sourceData from "@/data.json";
+import ExperienceCard from "@/components/ExperienceCard.vue";
 
 export default {
   data() {
@@ -27,14 +35,29 @@ export default {
       destination: null,
     };
   },
+  components: {
+    ExperienceCard,
+  },
   //type 5 : dynamic import with named routes
-  props: { type: Number, required: true },
+  //props: { type: Number, required: true },
 
   //type 4 : dynamic import with named routes
   // computed: {
   //   destinationId() {
   //     return parseInt(this.$route.params.id);
   //   },
+
+  //type 6: ExperienceCard setting
+  props: {
+    id: {
+      type: Number,
+      required: true,
+    },
+    slug: {
+      type: String,
+      required: true,
+    },
+  },
 
   //type 5 : dynamic import with named routes
   computed: {

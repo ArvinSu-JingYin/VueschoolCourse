@@ -50,6 +50,15 @@ const routes = [
       id: parseInt(route.params.id),
       slug: route.params.slug
     })
+  },
+  { path: '/experience/:id/:slug/:experienceSlug',
+    name: 'experience.Show', 
+    component: () => import('@/views/ExperienceShow.vue'),
+    props: route => ({
+      ...route.params,
+      id: parseInt(route.params.id),
+      experienceSlug: route.params.experienceSlug,
+    })
   }
 ]
 

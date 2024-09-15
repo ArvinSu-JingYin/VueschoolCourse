@@ -1,8 +1,8 @@
 <template>
-  <section v-if="experience">
-    <h1>{{ experience.name }}</h1>
-    <img :src="`/images/${experience.image}`" :alt="experience.name" />
-    <p>{{ experience.description }}</p>
+  <section v-if="experiences">
+    <h1>{{ experiences.name }}</h1>
+    <img :src="`/images/${experiences.image}`" :alt="experiences.name" />
+    <p>{{ experiences.description }}</p>
   </section>
 </template>
 
@@ -17,18 +17,44 @@ export default {
       type: String,
       required: true,
     },
+    destination: {
+      type: Object,
+      required: true,
+    },
+    experiences: {
+      type: Object,
+      required: true,
+    },
   },
-  computed: {
-    destination() {
-      return sourceData.destinations.find(
-        (destination) => destination.id === this.id
+  // computed: {
+  //   selectedDestination() {
+  //     return this.destination.find((destination) => destination.id === this.id);
+  //   },
+  //   experiences() {
+  //     console.log(this.selectedDestination.experiences);
+  //     return this.selectedDestination.experiences.find(
+  //       (experience) => experience.slug === this.experienceSlug
+  //     );
+  //   },
+  // },
+  data() {
+    return {
+      destination: null,
+      experience: null,
+    };
+  },
+  async created() {
+    try {
+      const response = await fetch(
+        `https://localhost:44343/GetTravelData?id=${this.id}`
       );
-    },
-    experience() {
-      return this.destination.experiences.find(
-        (experience) => experience.slug === this.experienceSlug
+      this.destination = (await response.json())[0];
+      this.experience = this.destination.experiences.find(
+        (exp) => exp.slug === this.experienceSlug
       );
-    },
+    } catch (error) {
+      console.error("Error fetching experience data:", error);
+    }
   },
 };
 </script>

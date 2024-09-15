@@ -9,11 +9,22 @@
   <section class="experiences" v-if="destination !== null">
     <h2>Top Experiences in {{ destination.name }}</h2>
     <div class="cards">
-      <ExperienceCard
+      <router-link
         v-for="experience in destination.experiences"
         :key="experience.id"
-        :experience="experience"
-      />
+        :to="{
+          name: 'experience.Show',
+          params: {
+            id: experience.id,
+            slug: destination.slug,
+            experienceSlug: experience.slug,
+            destination: destination, // 傳遞目的地資料
+            experiences: destination.experiences, // 傳遞體驗資料
+          },
+        }"
+      >
+        <ExperienceCard :experience="experience" />
+      </router-link>
     </div>
     <!-- <div class="cards">
       <div v-for="experience in destination.experiences" :key="experience.id" class="card">
@@ -32,7 +43,9 @@ import ExperienceCard from "@/components/ExperienceCard.vue";
 export default {
   data() {
     return {
-      destination: null,
+      destination: {
+        experiences: [],
+      },
     };
   },
   components: {

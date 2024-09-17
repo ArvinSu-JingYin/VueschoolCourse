@@ -9,5 +9,12 @@ export default defineConfig({
       '@' : path.resolve(__dirname, './src')
     },
   },
-  plugins: [vue()]
+  plugins: [vue()],
+  define: {
+    // Enable Vue DevTools in production environment
+    '__VUE_PROD_DEVTOOLS__': true,
+    
+    // Enable detailed hydration mismatch warnings in production environment
+    '__VUE_PROD_HYDRATION_MISMATCH_DETAILS__': true, 
+  },
 })

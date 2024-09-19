@@ -13,6 +13,7 @@ Its features include:
 - Can be integrated with Nuxt's routing system
 - Provides a simple API to handle asynchronous data
 */
+/* type 1 : example
 const { data } = useAsyncData(
   `/movies/${route.params.id}`,
   () => {
@@ -34,6 +35,7 @@ const { data } = useAsyncData(
   //   },
   // }
 );
+*/
 
 //type AI
 // onMounted(async () => {
@@ -41,6 +43,15 @@ const { data } = useAsyncData(
 //     `http://www.omdbapi.com/?i=${route.params.id}&apikey=bbf73337`
 //   );
 // });
+
+//type 2
+const { data } = useFetch(
+  `http://www.omdbapi.com/?i=${route.params.id}&apikey=bbf73337`,
+  {
+    pick: ["Plot", "Title"],
+    key: `/movies/${route.params.id}`,
+  }
+);
 </script>
 
 <template>

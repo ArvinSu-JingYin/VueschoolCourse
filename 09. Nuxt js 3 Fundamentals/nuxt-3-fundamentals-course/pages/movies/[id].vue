@@ -48,7 +48,7 @@ const { data } = useAsyncData(
 const { data, error } = await useFetch(
   `http://www.omdbapi.com/?i=${route.params.id}&apikey=bbf73337`,
   {
-    pick: ["Plot", "Title", "Error"],
+    pick: ["Plot", "Title", "Poster", "Error"],
     key: `/movies/${route.params.id}`,
   }
 );
@@ -63,6 +63,16 @@ if (data.value.Error === "Incorrect IMDb ID.") {
     statusMessage: "Page not found",
   });
 }
+
+useHead({
+  title: data.value.Title,
+  meta: [
+    { name: "description", content: data.value.Plot },
+    { property: "og:image", content: data.value.Poster },
+    { property: "og:description", content: data.value.Plot },
+    { name: "twitter:card", content: "summary_large_image" },
+  ],
+});
 </script>
 
 <template>

@@ -13,9 +13,27 @@ Its features include:
 - Can be integrated with Nuxt's routing system
 - Provides a simple API to handle asynchronous data
 */
-const { data } = useAsyncData(() => {
-  return $fetch(`http://www.omdbapi.com/?i=${route.params.id}&apikey=bbf73337`);
-});
+const { data } = useAsyncData(
+  `/movies/${route.params.id}`,
+  () => {
+    return $fetch(
+      `http://www.omdbapi.com/?i=${route.params.id}&apikey=bbf73337`
+    );
+  },
+  //use pick to pick the data
+  {
+    pick: ["Plot", "Title"],
+  }
+
+  //use transform to modify the data
+  // {
+  //   transform(data) {
+  //     return {
+  //       Plot: data.Plot,
+  //     };
+  //   },
+  // }
+);
 
 //type AI
 // onMounted(async () => {

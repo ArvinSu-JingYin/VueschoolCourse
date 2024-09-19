@@ -45,13 +45,24 @@ const { data } = useAsyncData(
 // });
 
 //type 2
-const { data } = useFetch(
+const { data, error } = await useFetch(
   `http://www.omdbapi.com/?i=${route.params.id}&apikey=bbf73337`,
   {
-    pick: ["Plot", "Title"],
+    pick: ["Plot", "Title", "Error"],
     key: `/movies/${route.params.id}`,
   }
 );
+
+if (error.value) {
+  console.log(error.value);
+}
+
+if (data.value.Error === "Incorrect IMDb ID.") {
+  showError({
+    statusCode: 404,
+    statusMessage: "Page not found",
+  });
+}
 </script>
 
 <template>

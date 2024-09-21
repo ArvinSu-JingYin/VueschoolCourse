@@ -1,15 +1,28 @@
 <script setup>
-const isLoggedIn = useIsLoggedIn();
+//use composable
+//const isLoggedIn = useIsLoggedIn();
+
+//use pinia
+import { useUser } from "@/stores/User";
+const user = useUser();
 
 definePageMeta({
   layout: "plain",
 });
 
+//use composable
+// function login() {
+//   isLoggedIn.value = true;
+//   useRouter().push("/");
+// }
+
+//use pinia
 function login() {
-  isLoggedIn.value = true;
+  user.isLoggedIn = true;
   useRouter().push("/");
 }
 </script>
+
 
 <template>
   <form @submit.prevent="login">

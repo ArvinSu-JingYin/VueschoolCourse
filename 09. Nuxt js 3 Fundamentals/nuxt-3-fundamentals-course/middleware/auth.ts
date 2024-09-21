@@ -1,8 +1,7 @@
 export default defineNuxtRouteMiddleware((to, from) => {
-  const userIsLoggedIn = false;
+  const isLoggedIn = useState("isLoggedIn").value;
 
-  if (!userIsLoggedIn) {
-    //type path
+  if (!isLoggedIn) {
     return navigateTo("/login");
 
     //type message

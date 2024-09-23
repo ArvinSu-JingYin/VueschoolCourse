@@ -14,5 +14,8 @@
     <li>
       <NuxtLink to="/usedark">UseDark</NuxtLink>
     </li>
+    <li>
+      <NuxtLink to="/flexboxPages">Flexbox</NuxtLink>
+    </li>
   </ul>
 </template>

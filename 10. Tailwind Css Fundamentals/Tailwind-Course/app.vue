@@ -11,3 +11,11 @@ const isDark = useDark();
     <NuxtPage />
   </div>
 </template>
+
+<style>
+/* 當 <html> 元素有 .dark 類別時 */
+.dark {
+  background-color: #16171d; /* 深色背景 */
+  color: #ffffff; /* 白色文字 */
+}
+</style>

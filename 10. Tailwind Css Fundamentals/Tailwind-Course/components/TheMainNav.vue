@@ -17,5 +17,8 @@
     <li>
       <NuxtLink to="/flexboxPages">Flexbox</NuxtLink>
     </li>
+    <li>
+      <NuxtLink to="/gridpages">Grid</NuxtLink>
+    </li>
   </ul>
 </template>

@@ -8,10 +8,12 @@ export default {
     "./plugins/**/*.{js,ts}",
     "./app.vue",
     "./error.vue",
+    "./index.html"
   ],
   theme: {
     extend: {},
   },
   plugins: [],
+  darkMode: 'class',
 }
 

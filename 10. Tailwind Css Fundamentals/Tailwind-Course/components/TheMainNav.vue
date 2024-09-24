@@ -20,5 +20,14 @@
     <li>
       <NuxtLink to="/gridpages">Grid</NuxtLink>
     </li>
+    <li>
+      <NuxtLink to="/flexboxandgridpage">Flexbox and Grid</NuxtLink>
+    </li>
+    <li>
+      <NuxtLink to="/rwdpage">RWD</NuxtLink>
+    </li>
+    <li>
+      <NuxtLink to="/pricingcardpage">Pricing Card</NuxtLink>
+    </li>
   </ul>
 </template>

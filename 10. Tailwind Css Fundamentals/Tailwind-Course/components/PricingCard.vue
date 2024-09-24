@@ -1,17 +1,25 @@
 <template>
   <div
-    class="flex flex-col justify-between rounded-lg border bg-gray-800 p-4 text-center"
+    class="flex w-full flex-col justify-between rounded-lg border border-gray-200 bg-white p-6 text-center shadow-md dark:border-gray-700 dark:bg-gray-800"
   >
     <div>
-      <h3 class="mb-4 text-xl font-bold">{{ name }}</h3>
-      <p class="mb-4 text-gray-400">{{ description }}</p>
+      <h3 class="mb-4 text-xl font-semibold">{{ name }}</h3>
+      <p class="mb-4 font-light text-gray-400 dark:text-gray-400 sm:text-lg">
+        {{ description }}
+      </p>
     </div>
     <div class="flex items-center justify-center">
-      <span class="mr-2 inline-block text-2xl font-bold">${{ price }}</span>
+      <span class="mr-2 inline-block text-5xl font-extrabold"
+        >${{ price }}</span
+      >
       <span class="text-gray-400">/month</span>
     </div>
-    <ul role="list" class="mt-3 text-left">
-      <li v-for="feature in features" :key="feature" class="mb-3 mr-2 flex">
+    <ul role="list" class="mb-8 space-y-4 text-left">
+      <li
+        v-for="feature in features"
+        :key="feature"
+        class="items-top flex space-x-3"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"

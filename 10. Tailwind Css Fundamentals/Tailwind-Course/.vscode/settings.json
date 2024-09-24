@@ -9,5 +9,6 @@
     "editor.formatOnSave": true,
     "prettier.useEditorConfig": false,
     "prettier.useTabs": false,
-    "prettier.configPath": ".prettierrc"
+    "prettier.configPath": ".prettierrc",
+    "editor.wordWrap": "on",
 }

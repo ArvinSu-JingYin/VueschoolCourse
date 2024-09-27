@@ -29,5 +29,8 @@
     <li>
       <NuxtLink to="/pricingcardpage">Pricing Card</NuxtLink>
     </li>
+    <li>
+      <NuxtLink to="/navbarpage">Navbar</NuxtLink>
+    </li>
   </ul>
 </template>

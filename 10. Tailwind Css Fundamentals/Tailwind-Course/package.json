@@ -13,6 +13,7 @@
     "prepare": "nuxt prepare"
   },
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "@vueuse/core": "^11.1.0",
     "nuxt": "^3.13.2",
     "vue": "latest",

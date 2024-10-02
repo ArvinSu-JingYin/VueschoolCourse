@@ -1,9 +1,11 @@
 <script setup lang="ts">
 const active = ref(false)
+const mobileMenuActive = ref(false);
 </script>
 <template>
-  <header class="flex items-center justify-between bg-gray-800 p-2">
-    <button class="flex w-10 flex-col gap-2">
+  <header class="flex items-center justify-between bg-gray-800 p-2 relative">
+    <button class="flex w-10 flex-col gap-1 p-2 bg-gray-700 rounded sm:hidden outline outline-white"
+            @click="$event => mobileMenuActive = !mobileMenuActive">
       <span class="block h-1 w-full bg-white"></span>
       <span class="block h-1 w-full bg-white"></span>
       <span class="block h-1 w-full bg-white"></span>
@@ -14,7 +16,7 @@ const active = ref(false)
         alt="Logo"
         class="mr-3 aspect-[139/166] w-8"
       />
-      <ul class="flex gap-1">
+      <ul class="flex gap-1 absolute top-full flex-col sm:static sm:flex-row left-0 w-full p-2" v-if="mobileMenuActive">
         <li
           class="cursor-pointer rounded bg-gray-900 px-2 py-1 text-gray-400 hover:bg-gray-500 hover:text-gray-100"
         >

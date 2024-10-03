@@ -32,5 +32,8 @@
     <li>
       <NuxtLink to="/navbarpage">Navbar</NuxtLink>
     </li>
+    <li>
+      <NuxtLink to="/cartcheckoutpage">Cart Checkout</NuxtLink>
+    </li>
   </ul>
 </template>

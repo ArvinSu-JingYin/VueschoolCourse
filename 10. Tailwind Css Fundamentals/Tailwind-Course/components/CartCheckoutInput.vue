@@ -19,13 +19,13 @@ defineOptions({
 <template>
   <div :class="props.class">
     <input 
-      class="block focus:border-[#EA7C67]"
+      class="block focus:border-[#EA7C67] focus:outline-none w-full text-sm font-light tracking-wider bg-transparent border-b border-white"
       v-bind="$attrs"
       :id="slugify(label)"
     >
     <label 
     class="text-xs text-gray-500"
-    :for="slugify(label)"></label>
+    :for="slugify(label)">{{label}}</label>
   </div>
 </template>
 

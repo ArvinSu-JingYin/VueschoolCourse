@@ -44,7 +44,7 @@ import CartCheckoutButton from './CartCheckoutButton.vue';
 
     <!-- Form -->
      <div>
-      <fieldset>
+      <fieldset class="flex w-full gap-6 mb-5 tracking-wide">
         <CartCheckoutInput
         class="w-11/12"
         label="Card Holder"
@@ -57,10 +57,20 @@ import CartCheckoutButton from './CartCheckoutButton.vue';
         value="09/18"
         />
       </fieldset>
+
+      <fieldset class="flex w-full gap-6 mb-5 tracking-wide">
+
+        <CartCheckoutInput
+        class="w-11/12"
+        label="Card Number"
+        value="6336 8912 3456 7890"
+        />
+
+        <CartCheckoutInput label="CVC" value="532" class="w-12"/>
+      </fieldset>
+
+      <CartCheckoutCheckbox>Add Card to wallet</CartCheckoutCheckbox>
+      <CartCheckoutButton />>
      </div>
   </div>
 </template>
-
-<style>
-
-</style>

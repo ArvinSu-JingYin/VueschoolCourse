@@ -70,7 +70,7 @@ import CartCheckoutButton from './CartCheckoutButton.vue';
       </fieldset>
 
       <CartCheckoutCheckbox>Add Card to wallet</CartCheckoutCheckbox>
-      <CartCheckoutButton />>
+      <CartCheckoutButton />
      </div>
   </div>
 </template>
